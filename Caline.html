@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<!-- saved from url=(0069)fileUs:///ers/tumo/Desktop/Programming%20summer%20camp-PM/Caline.html -->
+<html>
+  <head>
+        <title>dogs</title>
+        <link rel="stylesheet" href="./caline_files/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    </head>
+    <body>
+    <style>
+    .checked{
+      text-decoration: line-through;
+    }
+    h1 {color: rgb(236, 45, 163);
+    font-size: 19mm;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center}
+#firstparagraph {color: rgb(219, 100, 223)}
+#secondparagraph {color: rgb(97, 11, 155)}
+    p{font-size: 6mm;
+    font-family: 'Times New Roman', Times, serif}
+    #firstimage {height: 150px}
+    #secondimage {height:115px}
+    .thirdimage {height:110px}
+      body {background-color:rgb(223, 184, 223)}
+    </style>
+   <marquee behavior ="alternate" id=effect> Hello! </marquee>
+   <marquee behavior="scroll" direction="left">
+    <img src="Smiling_Shibas_Hero.jpg" width="150" height="100" alt="smile">
+    
+    </marquee>
+  <style>
+  #effect{font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 7mm;
+  color: blueviolet
+  }
+  </style>
+   <h1>Shibas</h1>
+        <p id="firstparagraph">The Shiba Inu dog breed was originally bred to flush birds and small game, and was occasionally used to hunt wild boar. He is one of Japan’s six native breeds: Akita (large), Kishu, Hokkaido, Kai, Shikoku (medium), and Shiba (small). He is known for his spirited personality, small upright ears, and cat-like agility. Today he serves primarily as a companion dog in Japan and the United States.</p>
+       <p id="secondparagraph"> Are shiba inu good family dogs?
+        Despite all of this, the Shiba Inu is a good family dog — he is loyal and devoted — and does well with children as long as he is properly socialized and trained, and the children treat him kindly and respectfully. The Shiba Inu has been known to show the fiery side of his personality with other dogs and animals.</p>
+        <a href="https://www.akc.org/dog-breeds/shiba-inu/">this is a link about shibas</a>
+       <img id="firstimage" src="file:///Users/tumo/Desktop/Programming%20summer%20camp-PM/Shiba-Inu-On-White-01.jpg">
+       <img id="secondimage" src="file:///Users/tumo/Desktop/Programming%20summer%20camp-PM/shiba-inu-1.jpg">
+       <img class="thirdimage" src="file:///Users/tumo/Desktop/Programming%20summer%20camp-PM/Shiba-Inu-MP.jpg">
+       <img class="thirdimage" src="file:///Users/tumo/Desktop/Programming%20summer%20camp-PM/main-qimg-bd4c67129c7cf24f73e751dd2560bab8.jpeg">
+       <div class="alert alert-primary" role="alert">
+          shibas are very friendly and cute.
+        </div>
+        <p id=lolo class="card-text">Brought to America from Japan as recently as 60 years ago, Shibas are growing in popularity in the West and are already the most popular breed in their homeland. Their white markings combined with their coloring (red, red sesame, or black and tan) and their alert expression and smooth stride makes them almost foxlike. They’re sturdy, muscular dogs with a bold, confident personality to match.
+
+          </p>
+
+       
+            <img src="440px-Taka_Shiba.jpg" class="card-img-top" alt="...">
+           
+            </div>
+          </div>
+<style>
+  div {color: blueviolet}
+  a {color:rgb(143, 16, 247)}
+  #cal {color:rgb(220, 20, 187)}
+</style>
+   
+          <a id="cal" href="https://en.wikipedia.org/wiki/Shiba_Inu" class="btn btn-primary">Go to wikipedia</a>
+        </div>
+      </div>  
+      
+      <h1 id="bye" style="color: blue;"> Bye! Hope you enjoyed this site. Don't forget to comment below!!  </h1>
+      <style>
+      h1{
+      font-size: 8mm 
+      }
+      #lolo{
+        color: aquamarine
+      }
+      h2
+      {color: rgb(29, 84, 156)}
+      #addBtn{
+        color: blueviolet
+      }
+      </style>
+      
+      
+      <input id="input1" type="text" placeholder="Choose A Color">
+      <button id="ChangeBtn">Change color</button>
+      <input id="input3" type="text" placeholder="Comment color">
+      <button id="ChangeBtn1">Change color</button>
+      <h2>Write what you think about this site</h2>
+      <input type="text" id="input2">
+      <button id="addBtn">Add</button>
+          <div id="content" ></div>
+       <p id=thanks> Thank You!</p>
+       <style> #thanks{
+         color: purple;
+         font-size: 30mm;}
+         </style>
+        
+        
+        
+        <script>
+document.getElementById('content').innerHTML= localStorage.getItem('comment')
+
+      document.getElementById('ChangeBtn').addEventListener('click',function(){
+          document.getElementById('bye').style.color = document.getElementById("input1").value;
+      })
+      document.getElementById('ChangeBtn1').addEventListener('click',function(){
+          document.getElementById('content').style.color = document.getElementById("input3").value;
+          
+      })
+      
+     
+    document.getElementById('addBtn').addEventListener('click', function(){
+var a= document.createElement('li')
+var c= document.createElement('input')
+c.setAttribute('type','checkbox')
+c.addEventListener('change', checkItem)
+a.append(c)
+
+a.append(document.getElementById('input2').value)
+
+var b= document.createElement('button')
+b.addEventListener('click', removeItem)
+b.innerHTML="REMOVE"
+a.append(b)
+
+
+document.getElementById('content').append(a)
+localStorage.setItem('comment', document.getElementById('content').innerHTML)
+   
+    })
+  function removeItem(){
+    this.parentNode.remove()
+  }
+  function checkItem(){
+this.parentNode.classList.toggle('checked')
+  }
+    </script>
+      
+      
+      
+      </body>
+      </html>
